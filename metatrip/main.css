@@ -1,0 +1,78 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+.container {
+  display: grid;
+}
+
+.header {
+  display: grid;
+  height: 572px;
+  background-image: linear-gradient(rgba(157, 172, 209, 0.2), rgba(157, 172, 209, 0.2)), url(/images/bg-hero.jpg);
+  background-size: cover;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.color-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 572px;
+  width: 100%;
+  background-color: #9DACD0;
+  opacity: 0.3;
+}
+
+.text-title {
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-destinations {
+  display: grid;
+  height: 1111px;
+  background-color: blueviolet;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.flex-dest {
+  display: grid;
+}
+
+.box-dest {
+  height: 300px;
+  width: 150px;
+  background-color: black;
+  grid-area: box-dest;
+
+}
+
+.trending-cities {
+  display: grid;
+  height: 804px;
+  background-color: crimson;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.popular-countries {
+  display: grid;
+  height: 810px;
+  background-color: darkmagenta;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer {
+  display: grid;
+  height: 346px;
+  background-color: cornflowerblue;
+  grid-template-columns: repeat(4, 1fr);
+}

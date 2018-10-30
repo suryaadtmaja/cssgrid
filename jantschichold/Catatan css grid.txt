@@ -1,0 +1,6 @@
+minmax :
+grid-template-columns: minmax(200px, 1fr) 200px 200px 1fr 1fr 1fr 1fr 1fr
+seberapa banyak column ketika sudah ada minmax dia akan tetap 200px sebanyak apapun column, tetapi apabila
+
+grid-template-columns: minmax(200px, 1fr) 200px 200px
+1fr akan mengambil seluruh tempat yang tersisa

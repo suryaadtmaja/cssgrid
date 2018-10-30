@@ -1,0 +1,224 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+.container {
+  display: grid;
+}
+
+.header {
+  display: grid;
+  background-color: white ;
+  padding: none;
+  height: 80px;  
+  grid-template-columns: repeat(4, 1fr);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 20px;
+  flex-shrink:0;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo {
+    width: 15.1875rem;
+    height: 2.4375rem;
+    background-image: url(https://foundersfund.com/wp-content/themes/foundersfund-2016/dist/images/logo-ff-2015.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: 110%;
+    -webkit-transition: opacity .3s .3s cubic-bezier(.215,.61,.355,1);
+    transition: opacity .3s .3s cubic-bezier(.215,.61,.355,1);
+
+}
+}
+
+.menu p {
+  color: black;
+}
+
+.sub-header {
+  display: grid;
+  background-color: #11162a;
+  padding: none;
+  height: 50px;
+  padding-top: 80px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hero {
+  display: grid;
+  grid-template-areas: 
+  'big-hero big-hero big-hero'
+  'big-hero big-hero big-hero';
+}
+
+.big-hero {
+  grid-area: big-hero;
+  height: 450px;
+  background: url(https://foundersfund.com/wp-content/uploads/2018/06/Episode-05-Hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.text-hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 50px;
+  height: 70%;
+  flex-shrink:0;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.text-hero h1 {
+  font-size: 72px;
+  font-family: 'Proxima Nova Semi-Bold', Georgia, sans-serif
+}
+
+.text-hero p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 350px 100px;
+  grid-template-columns: 1fr 1fr 451px;
+  grid-template-areas: 
+  'long-content long-content sub-content'
+  'long-content long-content sub-content';
+}
+
+.small-content {
+  grid-area: sub-content;
+  /* height: 100%; */
+  display: block;
+  position: relative;
+  background:url(https://foundersfund.com/wp-content/uploads/2018/05/Season-02-Hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .small-content::before, .small-content::after {
+  display: table;
+  content: ' ';
+  clear: both;
+} */
+
+.the-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 50px;
+  height: 70%;
+  flex-shrink:0;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+h1 {
+  color: white;
+  font-size: 24px;
+}
+
+p {
+  color: white;
+  font-size: 14px;
+}
+
+.long-content {
+  grid-area: long-content;
+  background: url(https://foundersfund.com/wp-content/uploads/2018/06/Episode-04-Hero-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.the-long-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 50px;
+  height: 70%;
+  flex-shrink:0;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.footer {
+  display: grid;
+  background-color: red;
+  padding: none;
+  height: 80px;  
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@supports (display: grid) {
+  @media screen and (max-width: 600px) {
+    .container {
+      display: grid;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 300px 300px 300px 300px;
+      grid-template-areas:
+      'long-content'
+      'long-content'
+      'sub-content'
+      'sub-content';
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      'big-hero'
+      'big-hero';
+    }
+    
+    .big-hero {
+      grid-area: big-hero;
+      grid-template-columns: 1fr;
+      background-color: green;
+    }
+
+    .small-content {
+      grid-area: sub-content;
+      background-color: blue; 
+    }
+
+    .long-content {
+      grid-area: long-content;
+      background-color: black;
+    }
+
+    .header {
+      grid-template-columns: 1fr;
+    }
+
+    .sub-header {
+      grid-template-columns: 1fr;
+    }
+
+  }
+}

@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: cornsilk;
+}
+
+header {
+  background: #f6f3ea;
+  min-height: 100vh;
+  padding: 2rem 2vw 0rem;
+}
+
+.container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: auto 1fr 0.5fr 1fr;
+  grid-template-rows: auto 0.5fr 0.5fr auto;
+}
+
+.image-circle {
+  grid-column: 3/3;
+  grid-row: 3;
+  background-image: url('./images/tom.jpeg');
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 50%;
+}
+
+.text {
+  grid-column:4/5;
+  grid-row: 3;
+}
