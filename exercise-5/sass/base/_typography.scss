@@ -1,0 +1,78 @@
+@import '../layout/main';
+@import '../base/color';
+
+$font-family1: 'Work Sans', sans-serif;
+$font-family2: 'Work Sans', sans-serif;
+$font-family3: 'Work Sans', sans-serif;
+
+
+h1 {
+  color: $white-color;
+}
+
+h2 {
+  color: $white-color;
+  font-size: 40px;
+  font-family: $font-family1;
+  font-weight: 700;
+  letter-spacing: -1.73px;
+  grid-column: 3/8;
+  grid-row: 2/2;
+}
+
+.popular-h2 {
+  font-family: $font-family1;
+  grid-column: 3/8;
+  grid-row: 1/1;
+  font-size: 24px;
+  color: #231F1E;
+  text-align: center;
+  font-weight: 700;
+}
+
+.browse-h2 {
+  font-family: $font-family1;
+  grid-column: 3/8;
+  grid-row: 4/4;
+  font-size: 24px;
+  color: #231F1E;
+  text-align: center;
+  font-weight: 700;
+}
+
+.contact-h2 {
+  font-family: $font-family1;
+  grid-column: 3/8;
+  grid-row: 1/1;
+  align-self: end;
+  font-size: 24px;
+  color: #231F1E;
+  text-align: center;
+  font-weight: 700;
+}
+
+.widgets-h41 {
+  font-family: $font-family1;
+  grid-column: 1/2;
+  grid-row: 2/2;
+}
+.widgets-h42 {
+  font-family: $font-family1;
+  grid-column: 3/4;
+  grid-row: 2/2;
+}
+.widgets-h43 {
+  font-family: $font-family1;
+  grid-column: 4/5;
+  grid-row: 2/2;
+}
+.widgets {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.widgetsli {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: $font-family1;
+}
